@@ -15,7 +15,7 @@
 include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
 date_default_timezone_set("UTC"); 
 
-$storeURL = array('krcspebbletest','krcstest2');
+$storeURL = array('krcstest1','krcstest2');
 $maxIterations = Count($storeURL)-1;
 
 if ($_GET['increase']=="y")
