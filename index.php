@@ -9,7 +9,7 @@ $f3->route('GET /',
 );
 
 // Get the product lists
-$f3->route('GET /example/',
+$f3->route('GET /example',
     function() {
         include 'example1.php';
     }
