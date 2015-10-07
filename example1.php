@@ -90,7 +90,7 @@ for ($a = 0 ; $a < $noOfStores ; $a++) {
 }
 ?>
 
-<a href="https://gentle-ridge-9144.herokuapp.com/new/">Add a new product to all stores</a>
+<a href="https://gentle-ridge-9144.herokuapp.com/new">Add a new product to all stores</a>
 
 </body>
 </html>

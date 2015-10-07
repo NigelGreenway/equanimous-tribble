@@ -101,6 +101,6 @@ if (!($i > $maxIterations))
 }
 ?>
     <p></p>
-    <a href="https://gentle-ridge-9144.herokuapp.com/example/">Click to get the product list!</a>
+    <a href="https://gentle-ridge-9144.herokuapp.com/example">Click to get the product list!</a>
   </body>
 </html>
