@@ -2,11 +2,11 @@
 $f3 = require('vendor/bcosca/fatfree/lib/base.php');
 
 //main page
-$f3->route('GET /',
-    function() {
-        include 'main.php';
-    }
-);
+//$f3->route('GET /',
+//    function() {
+//        include 'main.php';
+//    }
+//);
 
 // Get the product lists
 $f3->route('GET /example/',
