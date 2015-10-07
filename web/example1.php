@@ -50,7 +50,8 @@
 <body>
     
 <?php
-include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
+//include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $noOfStores = count($_SESSION['token']);
 //echo $noOfStores;
@@ -90,7 +91,7 @@ for ($a = 0 ; $a < $noOfStores ; $a++) {
 }
 ?>
 
-<a href="https://vend-products.herokuapp.com//new">Add a new product to all stores</a>
+<a href="https://vend-products.herokuapp.com/new">Add a new product to all stores</a>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 <?php session_start();
 
-include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
+//include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 //$index = $_GET['data'];
 

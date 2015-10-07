@@ -12,7 +12,9 @@
 
 <?php>
 
-include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
+//include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
+require __DIR__ . '/../vendor/autoload.php';
+
 date_default_timezone_set("UTC"); 
 
 $storeURL = array('krcspebbletest','krcstest2');

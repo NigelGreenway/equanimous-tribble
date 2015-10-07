@@ -1,5 +1,5 @@
 <?php
-$f3 = require('vendor/bcosca/fatfree/lib/base.php');
+$f3 = require(__DIR__ . '/../vendor/autoload.php');
 
 //main page
 $f3->route('GET /',
