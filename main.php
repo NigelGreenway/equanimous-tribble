@@ -42,7 +42,7 @@ if (!($i > $maxIterations))
                 'client_id' => 'ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU',
                 'client_secret' => 'zhzGaiH2014yWVf8XbAqSjdPFUYt18jF',
                 'grant_type' => 'authorization_code',
-                'redirect_uri' => 'https://vend-products.herokuapp.com'
+                'redirect_uri' => 'https://vend-products.herokuapp.com/'
         ];
     
         // Prepare a request to POST to vend
@@ -87,7 +87,7 @@ if (!($i > $maxIterations))
         if (!($_SESSION['token'][$i]) or (($_SESSION['tokenExpires'][$i])<(time())))
         
         {
-            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU&redirect_uri=https://vend-products.herokuapp.com">Request Access for '.$i.'</a>');
+            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU&redirect_uri=https://vend-products.herokuapp.com/">Request Access for '.$i.'</a>');
         
         }
         
