@@ -15,7 +15,7 @@
 include 'vendor/vendapi/vendapi/src/VendAPI/VendAPI.php';
 date_default_timezone_set("UTC"); 
 
-$storeURL = array('krcstest1','krcstest2');
+$storeURL = array('krcspebbletest','krcstest2');
 $maxIterations = Count($storeURL)-1;
 
 if ($_GET['increase']=="y")
@@ -87,7 +87,7 @@ if (!($i > $maxIterations))
         if (!($_SESSION['token'][$i]) or (($_SESSION['tokenExpires'][$i])<(time())))
         
         {
-            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU&redirect_uri=https://vend-products.herokuapp.com/">Request Access for '.$i.'</a>');
+            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU&redirect_uri=https://vend-products.herokuapp.com">Request Access for '.$i.'</a>');
         
         }
         
