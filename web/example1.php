@@ -29,7 +29,7 @@
         foreach($value as $key2=>$value2){
             $html .= '<td>' . $value2 . '</td>';
         }
-        $html .= '<td>'. '<a href="https://gentle-ridge-9144.herokuapp.com/products/?data=' . $key .'&store=' . $testindex .'"' .'>Change stock</a>'. '</td>';
+        $html .= '<td>'. '<a href="https://vend-products.herokuapp.com/products/?data=' . $key .'&store=' . $testindex .'"' .'>Change stock</a>'. '</td>';
         $html .= '</tr>';
 
     }
