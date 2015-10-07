@@ -29,7 +29,7 @@
         foreach($value as $key2=>$value2){
             $html .= '<td>' . $value2 . '</td>';
         }
-        $html .= '<td>'. '<a href="http://localhost:8000/products/?data=' . $key .'&store=' . $testindex .'"' .'>Change stock</a>'. '</td>';
+        $html .= '<td>'. '<a href="https://gentle-ridge-9144.herokuapp.com/products/?data=' . $key .'&store=' . $testindex .'"' .'>Change stock</a>'. '</td>';
         $html .= '</tr>';
 
     }
@@ -90,7 +90,7 @@ for ($a = 0 ; $a < $noOfStores ; $a++) {
 }
 ?>
 
-<a href="https://gentle-ridge-9144.heroku.com/new/">Add a new product to all stores</a>
+<a href="https://gentle-ridge-9144.herokuapp.com/new/">Add a new product to all stores</a>
 
 </body>
 </html>
