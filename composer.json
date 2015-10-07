@@ -2,5 +2,8 @@
     "require": {
         "bcosca/fatfree": "^3.5",
         "vendapi/vendapi": "dev-master"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
     }
 }

@@ -42,7 +42,7 @@ if (!($i > $maxIterations))
                 'client_id' => 'ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU',
                 'client_secret' => 'zhzGaiH2014yWVf8XbAqSjdPFUYt18jF',
                 'grant_type' => 'authorization_code',
-                'redirect_uri' => 'http://localhost:8000/'
+                'redirect_uri' => 'https://gentle-ridge-9144.heroku.com/'
         ];
     
         // Prepare a request to POST to vend
@@ -78,7 +78,7 @@ if (!($i > $maxIterations))
         $_SESSION['tokenRefresh'][$i] = $vendRefresh;
         echo $_SESSION['tokenRefresh'][$i].'<br/>';
     
-        echo('<a href ="http://localhost:8000/?increase=y">Continue validating after '.$i.'</a>');  
+        echo('<a href ="https://gentle-ridge-9144.heroku.com/?increase=y">Continue validating after '.$i.'</a>');  
     }
     
     else
@@ -87,20 +87,20 @@ if (!($i > $maxIterations))
         if (!($_SESSION['token'][$i]) or (($_SESSION['tokenExpires'][$i])<(time())))
         
         {
-            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU&redirect_uri=http://localhost:8000/">Request Access for '.$i.'</a>');
+            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU&redirect_uri=https://gentle-ridge-9144.heroku.com/">Request Access for '.$i.'</a>');
         
         }
         
         else
         
         {
-            echo('<a href ="http://localhost:8000/?increase=y">Token '.$i.' is valid. Continue checking</a>');  
+            echo('<a href ="https://gentle-ridge-9144.heroku.com/?increase=y">Token '.$i.' is valid. Continue checking</a>');  
 
         }
         
 }
 ?>
     <p></p>
-    <a href="http://localhost:8000/example/">Click to get the product list!</a>
+    <a href="https://gentle-ridge-9144.heroku.com/example/">Click to get the product list!</a>
   </body>
 </html>
