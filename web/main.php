@@ -41,8 +41,8 @@ if (!($i > $maxIterations))
         // If the variable 'code' is present in the URI then save the relevant values
         $data = [
                 'code' => $_GET['code'],
-                'client_id' => 'ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU',
-                'client_secret' => 'zhzGaiH2014yWVf8XbAqSjdPFUYt18jF',
+                'client_id' => 'xxxxx',
+                'client_secret' => 'xxxx',
                 'grant_type' => 'authorization_code',
                 'redirect_uri' => 'https://vend-products.herokuapp.com/'
         ];
@@ -89,7 +89,7 @@ if (!($i > $maxIterations))
         if (!($_SESSION['token'][$i]) or (($_SESSION['tokenExpires'][$i])<(time())))
         
         {
-            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=ey4JpTpc9V121K0KSRYHdmFnjuSvj7NU&redirect_uri=https://vend-products.herokuapp.com/">Request Access for '.$i.'</a>');
+            echo('<a href ="https://'. $storeURL[$i] .'.vendhq.com/connect?response_type=code&client_id=xxxxxxxx&redirect_uri=https://vend-products.herokuapp.com/">Request Access for '.$i.'</a>');
         
         }
         
